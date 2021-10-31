@@ -4,7 +4,10 @@ $(document).ready(function() {
     $("ul#webpage").prepend("<li>Why hello there!</li>");
     $("ul#user").children("li").first().click(function() {
       alert('hi');
+      $("body").removeClass();
+      $("body").addClass("green-background");
     });
+    
     $("ul#webpage").children("li").first().click(function() {
       alert('hi');
     });
